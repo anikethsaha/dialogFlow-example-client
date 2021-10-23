@@ -18,7 +18,7 @@ const IndexPage = () => {
       try {
         const result = await axios({
           method: "POST",
-          url: "http://localhost:3000/df",
+          url: "https://shielded-citadel-24658.herokuapp.com/df",
           data: {
             query: val,
           },
