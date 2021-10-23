@@ -25,7 +25,7 @@ const IndexPage = () => {
         });
         const { data } = result;
         await setDataRes(data);
-        await setDefaultIntent(dataRes.intent === "Default Fallback Intent");
+        await setDefaultIntent(data.intent === "Default Fallback Intent");
         setLoadingState(false);
       } catch (error) {
         toast.error(error.toString());
